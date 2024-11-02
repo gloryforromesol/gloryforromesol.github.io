@@ -1,1 +1,0 @@
-# gloryforromesol.github.io
