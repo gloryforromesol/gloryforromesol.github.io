@@ -12,19 +12,46 @@
     /* Path to your banner image */
     background-size: cover;
     /* Ensures the image covers the entire header area */
-    background-position: center;
+    background-position: bottom;
     /* Centers the background image */
     height: 900px;
     /* Set this to the height of your banner image */
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     /* Vertically centers the content */
-    justify-content: center;
+    justify-content: space-between;
     /* Horizontally centers the content */
     color: white;
     /* Change text color to ensure visibility against the background */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     /* Optional: adds a shadow to the text for better visibility */
+}
+
+a {
+    width: 125px;
+    height: 125px;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+a.twitter {
+    background-image: url('x.jpg');
+    /* Replace with your Twitter icon image */
+}
+
+a.telegram {
+    background-image: url('tg.jpg');
+    /* Replace with your Telegram icon image */
 }
 
 /* Media Query for Tablet Devices */
@@ -60,7 +87,7 @@
 /* Media Query for Small Mobile Devices */
 @media (max-width: 480px) {
     .banner {
-        height: 250px;
+        height: 300px;
         /* Adjust height for smaller mobile devices */
     }
 }
@@ -87,6 +114,10 @@ body {
     align-items: center;
     text-align: center;
     color: #333;
+    background-image: url('paper.jpg');
+    background-size: cover;
+    /* Ensures the image covers the entire header area */
+    background-position: center;
 }
 
 header {
@@ -102,15 +133,12 @@ h1 {
 
 .main-content {
     width: 100%;
-    background-size: cover;
-    /* Ensures the image covers the entire header area */
-    background-position: center;
     flex: 1;
+    max-width: 1500px;
     /* Allow main content to grow and fill available space */
     display: flex;
     flex-direction: column;
     justify-content: start;
-    background-image: url('paper.png');
     /* Center content vertically */
 }
 
@@ -203,10 +231,12 @@ footer {
 .intro-text {
     margin-top: 20px;
     font-size: 80px;
+    color: #1f1e1e;
+    font-weight: bold;
     margin-bottom: 20px;
     padding-left: 10%;
     padding-right: 10%;
-    
+
 }
 
 /* Media Query for Tablet Devices */
@@ -247,10 +277,81 @@ footer {
     }
 }
 
+.ca-text {
+    margin-top: 20px;
+    font-size: 40px;
+    color: #1f1e1e;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    word-wrap: break-word;
+}
+
+@media (max-width: 550px) {
+    .ca-text {
+        font-size: 25px;
+        /* Adjust height for mobile devices */
+    }
+}
+
+
+
+/* aS */
+
+@media (max-width: 1024px) {
+    a {
+        height: 95px;
+        width: 95px;
+        margin-bottom: 18px;
+        /* Adjust height for tablet devices */
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    a {
+        height: 80px;
+        width: 80px;
+        margin-bottom: 15px;
+        /* Adjust height for tablet devices */
+    }
+}
+
+@media (max-width: 650px) {
+    a {
+        height: 63px;
+        width: 63px;
+        margin-bottom: 10px;
+        /* Adjust height for tablet devices */
+    }
+}
+
+@media (max-width: 550px) {
+    a {
+        height: 42px;
+        width: 42px;
+        margin-bottom: 7px;
+        /* Adjust height for tablet devices */
+    }
+}
+
+/* Media Query for Small Mobile Devices */
+@media (max-width: 480px) {
+    a {
+        height: 35px;
+        width: 35px;
+        margin-bottom: 7px;
+        /* Adjust height for tablet devices */
+    }
+}
+
 /* Media Query for Small Mobile Devices */
 @media (max-width: 300px) {
-    .intro-text {
-        height: 120px;
-        /* Adjust height for smaller mobile devices */
+    a {
+        height: 23px;
+        width: 23px;
+        margin-bottom: 4px;
+        /* Adjust height for tablet devices */
     }
 }
