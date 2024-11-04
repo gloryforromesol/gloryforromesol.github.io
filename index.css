@@ -17,6 +17,7 @@
     height: 900px;
     /* Set this to the height of your banner image */
     display: flex;
+    flex-direction: column;
     align-items: flex-end;
     /* Vertically centers the content */
     justify-content: space-between;
@@ -25,6 +26,24 @@
     /* Change text color to ensure visibility against the background */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     /* Optional: adds a shadow to the text for better visibility */
+}
+
+.music {
+    cursor: pointer;
+    background-image: url('button.png');
+    height: 100px;
+    width: 100px;
+    margin-top: 30px;
+    background-size: cover; /* Ensure the image fits */
+    background-position: center;
+    border: none; /* Remove any default button borders */
+    outline: none; /* Remove default outline on focus */
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 a {
