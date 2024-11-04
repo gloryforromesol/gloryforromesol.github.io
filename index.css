@@ -8,54 +8,68 @@
 
 
 .banner {
-    background-image: url('banner.jpg'); /* Path to your banner image */
-    background-size: cover; /* Ensures the image covers the entire header area */
-    background-position: center; /* Centers the background image */
-    height: 450px; /* Set this to the height of your banner image */
+    background-image: url('banner2.jpg');
+    /* Path to your banner image */
+    background-size: cover;
+    /* Ensures the image covers the entire header area */
+    background-position: center;
+    /* Centers the background image */
+    height: 900px;
+    /* Set this to the height of your banner image */
     display: flex;
-    align-items: center; /* Vertically centers the content */
-    justify-content: center; /* Horizontally centers the content */
-    color: white; /* Change text color to ensure visibility against the background */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: adds a shadow to the text for better visibility */
+    align-items: center;
+    /* Vertically centers the content */
+    justify-content: center;
+    /* Horizontally centers the content */
+    color: white;
+    /* Change text color to ensure visibility against the background */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Optional: adds a shadow to the text for better visibility */
 }
 
 /* Media Query for Tablet Devices */
 @media (max-width: 1024px) {
     .banner {
-        height: 250px; /* Adjust height for tablet devices */
+        height: 650px;
+        /* Adjust height for tablet devices */
     }
 }
 
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
     .banner {
-        height: 250px; /* Adjust height for mobile devices */
+        height: 550px;
+        /* Adjust height for mobile devices */
     }
 }
 
 @media (max-width: 650px) {
     .banner {
-        height: 220px; /* Adjust height for mobile devices */
+        height: 420px;
+        /* Adjust height for mobile devices */
     }
 }
 
 @media (max-width: 550px) {
     .banner {
-        height: 200px; /* Adjust height for mobile devices */
+        height: 300px;
+        /* Adjust height for mobile devices */
     }
 }
 
 /* Media Query for Small Mobile Devices */
 @media (max-width: 480px) {
     .banner {
-        height: 150px; /* Adjust height for smaller mobile devices */
+        height: 250px;
+        /* Adjust height for smaller mobile devices */
     }
 }
 
 /* Media Query for Small Mobile Devices */
 @media (max-width: 300px) {
     .banner {
-        height: 120px; /* Adjust height for smaller mobile devices */
+        height: 120px;
+        /* Adjust height for smaller mobile devices */
     }
 }
 
@@ -87,14 +101,16 @@ h1 {
 }
 
 .main-content {
-    width: 90%;
-    max-width: 800px;
+    width: 100%;
+    background-size: cover;
+    /* Ensures the image covers the entire header area */
+    background-position: center;
     flex: 1;
     /* Allow main content to grow and fill available space */
-    margin: 20px auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
+    background-image: url('paper.png');
     /* Center content vertically */
 }
 
@@ -102,7 +118,6 @@ h1 {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    margin-bottom: 20px;
 }
 
 .links {
@@ -186,7 +201,56 @@ footer {
 }
 
 .intro-text {
-    margin-bottom: 20px;
     margin-top: 20px;
-    font-size: 25px;
+    font-size: 80px;
+    margin-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+/* Media Query for Tablet Devices */
+@media (max-width: 1024px) {
+    .intro-text {
+        font-size: 60px;
+        /* Adjust height for tablet devices */
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .intro-text {
+        font-size: 50px;
+        /* Adjust height for mobile devices */
+    }
+}
+
+@media (max-width: 650px) {
+    .intro-text {
+        font-size: 45px;
+        /* Adjust height for mobile devices */
+    }
+}
+
+@media (max-width: 550px) {
+    .intro-text {
+        font-size: 35px;
+        /* Adjust height for mobile devices */
+    }
+}
+
+/* Media Query for Small Mobile Devices */
+@media (max-width: 480px) {
+    .intro-text {
+        font-size: 30px;
+        /* Adjust height for smaller mobile devices */
+    }
+}
+
+/* Media Query for Small Mobile Devices */
+@media (max-width: 300px) {
+    .intro-text {
+        height: 120px;
+        /* Adjust height for smaller mobile devices */
+    }
 }
